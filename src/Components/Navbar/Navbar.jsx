@@ -12,11 +12,11 @@ function Navbar({showLogin,setShowLogin,menu}) {
     <>
     <nav id='navbar' className='container'>
         <div className="logo">
-           <Link to='/'> <img src={assets.logo} alt="" /></Link>
+           <Link to='/tomato'> <img src={assets.logo} alt="" /></Link>
         </div>
         {menu?<div className="nav-menu">
             <ul className={`nav-list ${showMenu?'show-menu':''}`}>
-                <li>  <Link to="/"> Home</Link></li>
+                <li>  <Link to="/tomato"> Home</Link></li>
                 <li><a href="#explore-menu"> Menu</a></li>
                 <li><a href="#display-list"> Food lists </a></li>
                 <li><a href="#footer"> Contact us</a></li>
