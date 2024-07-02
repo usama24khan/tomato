@@ -1,0 +1,106 @@
+#login-form{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 98.6vw;
+}
+#login-form::before{
+    content: '';
+    background-image: url('./header_img.png');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 0.9;
+}
+.show-login{
+display: flex;
+height: 58vh;
+flex-direction: column;
+width: 25vw;
+background-image: linear-gradient(#79716c,#e2d5cd);
+border-radius: 20px;
+padding: 12px;
+justify-content: center;
+gap: 30px;
+box-shadow: 2px 2px 9px  black;
+}
+.show-login p{
+    color: #292421;
+}
+.show-login a{
+    color: tomato;
+}
+.form-header{
+    display: flex;
+    justify-content: space-between;
+}
+.form-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.input-boxes{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.input-boxes input{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: rgb(221, 226, 230);
+}
+.close-btn{
+    background-color:red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 0px 8px;
+}
+.form-buttons button{
+    border: none;
+    padding: 8px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.active-btn{
+    border: none;
+    padding: 8px;
+    background-color: tomato;
+    border-radius: 9px;
+    color: white;
+}
+.login-btn{
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .show-login{
+        height: 70vh;
+        width: 80vw;
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+
+    
+}

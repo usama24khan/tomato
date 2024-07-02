@@ -1,0 +1,20 @@
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+.container{
+  padding-right: 10%;
+  padding-left: 10%;
+} 
+.btn{
+  border: 1px solid grey;
+  padding: 12px;
+  background-color: white;
+  border-radius: 12px;
+ cursor: pointer;
+ color: grey;
+ transition:  0.2s;
+}
+.btn:hover{
+  background-color: #e0d7d7;
+  color: black;
+}
