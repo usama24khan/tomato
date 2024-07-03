@@ -116,9 +116,9 @@
     }
     .show-menu {
         display: block;
-position:fixed;
-top: 0px;
-right: 10px;
+        position:fixed;
+        top: 0px;
+        right: 0px;
     }
     .show-menu li{
         margin-top: 40px;
@@ -132,8 +132,11 @@ right: 10px;
     }
     .burgerfix{
         position: fixed;
-        top: 30px;
-        right: 30px;
+        top: 20px;
+        right: 2px;
+        color: white;
     }
-   
+   .fa-bars{
+    font-size: 2rem;
+   }
 }

@@ -72,9 +72,23 @@ padding-right: 2%;
 }
 @media screen and (max-width:600px) {
     .sub-totals{
-        gap: 10px;
+        gap: 30px;
         width: 80vw;
         padding-left: 5%;
     }
     
+}
+@media screen and (max-width:400px) {
+    #cards{
+        margin-top: 30px;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+    }
+    .card-titles{
+        font-size: 1rem;
+    }
+    .card-items{
+        gap: 20px;
+    }
 }
