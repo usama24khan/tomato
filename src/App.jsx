@@ -26,7 +26,7 @@ function App() {
                 <DisplayList category={category} />
               </>
             } />
-            <Route path="/cards" element={<Cards />} />
+            <Route path="/tomato/cards" element={<Cards />} />
           </Routes>
           <Footer />
         </Router>

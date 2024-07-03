@@ -1,19 +1,25 @@
 import React, { useContext,useState,useEffect }  from 'react'
 import './Cards.css'
+import { Link } from 'react-router-dom';
 import { ContexApi } from '../../ContexApi/ContexApi'
 import { food_list } from '../../images/frontend_assets/assets';
 
   
 function Cards() {
+  
   const deliveryFee = 5
-  const {food_lists,foodList,setFoodList,total,setTotal} = useContext(ContexApi)
+  const {food_lists,foodList,setFoodList,total,setTotal, hasQuantity} = useContext(ContexApi)
+  console.log(hasQuantity)
   useEffect(() => {
+     
     setFoodList(foodList);
     const newTotal = foodList.reduce((acc, item) => {
       return item.quantity > 0 ? acc + item.price * item.quantity : acc;
     }, 0);
     setTotal(newTotal);
-  console.log(foodList)
+  
+
+
   }, [foodList]);
 
  
@@ -28,9 +34,11 @@ function Cards() {
                 <p>Total</p>
                 <p>Remove</p>
               </div>
+              {hasQuantity?<></>:<div className='emty-card-item'> No items in the card! <Link to='/tomato'> <button className='btn '>Add Foods</button></Link> </div>}
 
       {foodList.map((item,index)=>{
         if(item.quantity>0){
+          
           return (
            
             <div key={index} className='card-items'>

@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import { ContexApi } from '../../ContexApi/ContexApi'
 import Footer from '../Footer/Footer'
 function Navbar({showLogin,setShowLogin,menu}) {
-  const foodList= useContext(ContexApi)
-  const hasQuantity = foodList.foodList.some(item=> item.quantity>0)
+  const {foodList,hasQuantity}= useContext(ContexApi)
+  console.log(hasQuantity)
  const [showMenu,setShowMenu]=useState(false)
   return (
     <>
@@ -25,7 +25,7 @@ function Navbar({showLogin,setShowLogin,menu}) {
         
         <div className="nav-right">
            
-          <Link to='/cards'> <img src={assets.basket_icon} alt="" /> <div className={`${hasQuantity&& "dot"}`}></div> </Link>
+          <Link to='/tomato/cards'> <img src={assets.basket_icon} alt="" /> <div className={`${hasQuantity&& "dot"}`}></div> </Link>
             <button onClick={()=>setShowLogin(true)} className='btn'>Sign in</button>
         </div>
         {menu? <div onClick={()=>setShowMenu(prev=> prev?false:true)} className={`burger ${showMenu?'burgerfix':''}`}><i className="fa-solid fa-bars"></i></div>:<></>}

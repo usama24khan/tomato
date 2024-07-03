@@ -5,11 +5,12 @@ export const ContexApi= createContext()
 const ContexProvider = (props)=>{
     const [foodList,setFoodList]=useState(food_list)
 const [total,setTotal]=useState(0)
+const hasQuantity = foodList.some(item=> item.quantity>0)
     const contexValue={
 food_list,
 foodList,
 setFoodList,
-total,setTotal
+total,setTotal,hasQuantity
     }
     
     return(
