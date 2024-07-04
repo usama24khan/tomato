@@ -92,6 +92,15 @@ padding-right: 2%;
         width: 80vw;
         padding-left: 5%;
     }
+    .card-titles{
+        font-size: 13px;
+    }
+    .card-items img{
+        width: 40px;
+    }
+    .card-items p{
+        font-size: 13px;
+    }
     
 }
 @media screen and (max-width:400px) {
@@ -105,7 +114,13 @@ padding-right: 2%;
         font-size: 11px;
     }
     .card-titles{
-        font-size: 1rem;
+        font-size: 12px;
+    }
+    .card-items img{
+        width: 30px;
+    }
+    .card-items p{
+        font-size: 12px;
     }
     .card-items{
         gap: 20px;

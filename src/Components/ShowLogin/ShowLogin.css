@@ -96,7 +96,7 @@ box-shadow: 2px 2px 9px  black;
 }
 @media screen and (max-width:900px) {
     .show-login{
-        height: 50vh;
+        height: 58vh;
         width: 80vw;
         padding-top: 60px;
         padding-bottom: 50px;

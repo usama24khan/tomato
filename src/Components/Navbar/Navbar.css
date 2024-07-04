@@ -95,6 +95,22 @@
         display: none;
         
     }
+    .nav-right .btn{
+        padding: 4px 4px;
+        font-size: 15px;
+        border-radius: 12px;
+       cursor: pointer;
+       color: grey;
+       transition:  0.2s;
+    }
+    .nav-right img{
+        margin-left:22px;
+        margin-top: 7px;
+    }
+    .dot::before{
+        top: 8px;
+        left: 26px;
+    }
     .nav-right{
         gap: 10px;
         
