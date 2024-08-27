@@ -13,11 +13,12 @@ function App() {
   const [category, setCategory] = useState("All");
   const [showLogin, setShowLogin] = useState(false);
 
+
   return (
     <>
       {showLogin ? <ShowLogin setShowLogin={setShowLogin} /> : (
         <Router>
-          <Navbar showLogin={showLogin} menu={true} setShowLogin={setShowLogin} />
+          <Navbar showLogin={showLogin} menu={true}  setShowLogin={setShowLogin} />
           <Routes>
             <Route path="/tomato" element={
               <>
@@ -26,7 +27,7 @@ function App() {
                 <DisplayList category={category} />
               </>
             } />
-            <Route path="/tomato/cards" element={<Cards />} />
+            <Route path="/tomato/cards" element={<Cards  />} />
           </Routes>
           <Footer />
         </Router>

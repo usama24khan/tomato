@@ -16,6 +16,7 @@ function Navbar({showLogin,setShowLogin,menu}) {
         </div>
         {menu?<div className="nav-menu">
             <ul className={`nav-list ${showMenu?'show-menu':''}`}>
+              
                 <li>  <Link to="/tomato"> Home</Link></li>
                 <li><a href="#explore-menu"> Menu</a></li>
                 <li><a href="#display-list"> Food lists </a></li>

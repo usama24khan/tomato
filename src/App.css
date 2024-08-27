@@ -6,8 +6,8 @@ hr{
 }
 @media screen and (max-width:600px) {
   .container{
-    padding-left: 1%!important;
-    padding-right: 1%!important;
+    padding-left: 3%!important;
+    padding-right: 3%!important;
   }
   
 }

@@ -5,13 +5,12 @@ import { ContexApi } from '../../ContexApi/ContexApi'
 import { food_list } from '../../images/frontend_assets/assets';
 
   
-function Cards() {
+function Cards({setCartMenu}) {
   
   const deliveryFee = 5
   const {food_lists,foodList,setFoodList,total,setTotal, hasQuantity} = useContext(ContexApi)
   console.log(hasQuantity)
   useEffect(() => {
-     
     setFoodList(foodList);
     const newTotal = foodList.reduce((acc, item) => {
       return item.quantity > 0 ? acc + item.price * item.quantity : acc;
